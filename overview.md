@@ -1,4 +1,4 @@
-# Title
+# QC DAO
 Some content here.
 
 - Bullet list
