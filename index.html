@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCDAO Docs</title>
+  <link rel="icon" href="/favicon.ico">
+  <meta name="description" content="QCDAO Documentation">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-radius: 8px;
+      padding: 32px;
+    }
+    h1 {
+      margin-top: 0;
+      color: #0070f3;
+    }
+    a {
+      color: #0070f3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>QCDAO Docs Overview</h1>
+    <div id="md-content"></div>
+    <script>
+      fetch('overview.md')
+        .then(response => response.text())
+        .then(md => {
+          // Simple markdown to HTML conversion (headings, bold, italics, paragraphs, lists)
+          let html = md
+            .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+            .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+            .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+            .replace(/\*\*(.*?)\*\*/gim, '<b>$1</b>')
+            .replace(/\*(.*?)\*/gim, '<i>$1</i>')
+            .replace(/^\s*---+\s*$/gim, '<hr>')
+            .replace(/^\s*\n/gim, '<br>')
+            .replace(/\n/g, '<br>');
+          document.getElementById('md-content').innerHTML = html;
+        });
+    </script>
+  </div>
+</body>
+</html>
