@@ -53,6 +53,9 @@
             .replace(/^\s*---+\s*$/gim, '<hr>')
             .replace(/^\s*\n/gim, '<br>')
             .replace(/\n/g, '<br>');
+                      // Convert markdown images to HTML <img> tags
+                      html = html.replace(/!\[(.*?)\]\((.*?)\)/gim, '<img alt="$1" src="$2" style="max-width:100%;margin:24px 0;box-shadow:0 2px 8px rgba(0,0,0,0.07);border-radius:8px;">');
+                    document.getElementById('md-content').innerHTML = html;
           document.getElementById('md-content').innerHTML = html;
         });
     </script>
