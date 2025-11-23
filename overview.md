@@ -5,30 +5,30 @@
 
 ## **Vision**
 
-A global, transparent DAO for quantum computing research and start-ups — funding innovation through collective intelligence.
+A global, transparent DAO funding quantum computing research and start-ups — supporting innovation through collective intelligence.
 
 ---
 
 ## **Overview**
 
-The Quantum Computing DAO (QC-DAO) proposes a decentralized, transparent, and expertise-driven funding ecosystem to accelerate global quantum innovation by providing research support from a community-governed, milestone-based model powered by blockchain. Through governance tokens (QFT), reputation-weighted voting, and stablecoin funding pools, the platform enables researchers, experts, contributors, and funders to collaboratively evaluate and advance high-quality quantum computing projects. Built on principles of open-source development, verifiable progress, and Sybil-resistant identity, QC-DAO integrates modern Web3 infrastructure to democratize access, reduce bias, and channel capital efficiently into start-ups, academic research, and foundational quantum technologies. This framework aims to foster rapid innovation, global participation, and long-term sustainability in the quantum computing ecosystem.
+The Quantum Computing DAO (QC-DAO) proposes a decentralized, transparent, and expertise-driven funding ecosystem to accelerate global quantum innovation by providing research support from a community-governed, milestone-based model powered by blockchain. Through governance tokens (QFT), reputation-weighted voting, and stablecoin funding pools, the platform enables researchers, experts, contributors, and funders to collaboratively evaluate and advance high-quality quantum computing projects. Built on principles of open-source development, verifiable progress, and Sybil-resistant identity, QC-DAO integrates modern Web3 infrastructure to democratize access, reduce bias, and channel capital efficiently into start-ups, academic research, and foundational quantum technologies. This framework aims to foster rapid innovation, global participation, and long-term growth in the quantum computing ecosystem.
 
 
 ---
 
 ## **1. The Problem**
 
-Quantum computing research is currently funded through a highly centralized model dominated by large government initiatives and corporate programs. Although billions of dollars flow into national programs like QEP3 and corporate ventures from companies like D-Wave, the funds rarely reach the long-tail of innovation—namely university researchers, small labs, and early-stage start-ups. These smaller players often hold the breakthrough ideas but lack efficient and accessible funding pathways.
+Quantum computing research is currently funded through a highly centralized model dominated by large government initiatives and corporate programs. Although billions of dollars flow into national programs like the €1 billion Quantum Technologies Flagship [^1] and over €11 billion from the EU and Member States in quantum technologies since 2021 and large investments in quantum computing proivders such as Quantinuum[^2] and QCi[^3], the funds rarely reach the long-tail of innovation—namely university researchers, small labs, and early-stage start-ups. These smaller players may hold the breakthrough ideas but lack efficient and accessible funding pathways to explore and develop their innovations.
 
 At the same time, public interest in quantum computing is growing, yet individuals and smaller investors have no clear entry points to participate. Media narratives contribute confusion by alternating between exaggerated hype and skepticism, leaving potential contributors unsure how to engage. Without a mechanism to support bottom-up innovation and demonstrate near-term impact, the industry risks entering a “quantum funding winter,” which would significantly slow global progress.
 
 ---
 
-## **2. The Solution — Decentralized Funding **
+## **2. The Solution — Decentralized Funding**
 
-A decentralized funding model—built on blockchain and inspired by the DeSci movement—aims to democratize access to quantum research and accelerate innovation. By distributing decision-making and capital allocation across a global community, this model reduces bias, encourages transparency, and promotes a more diverse pipeline of ideas and contributors. Blockchain provides verifiable votes, auditable funding flows, and programmable incentives tied to measurable progress.
+A decentralized funding model—built on blockchain and inspired by the DeSci[^4] movement—aims to democratize access to quantum research and accelerate innovation. By distributing decision-making and capital allocation across a global community, this model reduces bias, encourages transparency, and promotes a more diverse pipeline of ideas and contributors. Blockchain provides verifiable votes, auditable funding flows, and programmable incentives tied to measurable progress.
 
-This approach also enables a broader set of participants to meaningfully contribute: researchers can propose projects, experts can evaluate them, and the public can support promising directions through governance tokens. The result is a system where good ideas can emerge from anywhere, credibility is earned through contribution rather than influence, and funding can flow more efficiently toward impactful research and start-ups.
+This approach also enables a broader set of participants to meaningfully contribute: researchers can propose projects, experts can evaluate them, and the public can support promising directions through governance tokens and funds. The result is a system where good ideas can emerge from anywhere, credibility is earned through contribution rather than influence, and funding can flow more efficiently toward impactful research and start-ups. Futhermore, the eco-system encourages education, collaboration and exposure for future investments.
 
 ---
 
@@ -37,6 +37,8 @@ This approach also enables a broader set of participants to meaningfully contrib
 The DAO ecosystem consists of proposers, experts, voters, and funders interacting through governance tokens and stablecoin pools. Proposers submit detailed quantum-related projects, which are pre-screened by experts before being opened to a wider voting community. Governance tokens (QFT) shape influence through reputation, delegation, and contribution history, while stablecoins form the actual funding mechanism for selected projects.
 
 Through this layered structure, only the highest-quality and best-reviewed proposals advance to funding rounds. The system includes KPI tracking, milestone verification, and transparent reporting, ensuring accountability from proposers and confidence for funders. This creates a governance flow that blends decentralized decision-making with expert oversight, resulting in a reliable pipeline for quantum innovation.
+
+
 
 ---
 
@@ -304,3 +306,9 @@ quantum machine learning applications, Q-GPT systems, and collaborative initiati
 * QML for Fraud Detection
 * Q-GPT
 
+## **References**
+
+[^1]: https://digital-strategy.ec.europa.eu/en/policies/quantum-technologies-flagship
+[^2]: https://thequantuminsider.com/2025/11/05/fidelity-backs-10-billion-quantum-firm-quantinuum-in-oversubscribed-round/
+[^3]: https://quantumcomputinginc.com/news/press-releases/quantum-computing-inc.-announces-500-million-oversubscribed-private-placement-of-common-stock-priced-at-the-market-under-nasdaq-rules
+[^4]: https://www.desci.com/
