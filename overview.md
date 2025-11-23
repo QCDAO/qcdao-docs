@@ -38,33 +38,35 @@ The DAO ecosystem consists of proposers, experts, voters, and funders interactin
 
 Through this layered structure, only the highest-quality and best-reviewed proposals advance to funding rounds. The system includes KPI tracking, milestone verification, and transparent reporting, ensuring accountability from proposers and confidence for funders. This creates a governance flow that blends decentralized decision-making with expert oversight, resulting in a reliable pipeline for quantum innovation.
 
-
+![Flowchart](SolutionOverview.png)
 
 ---
 
 ## **4. Detailed System Design**
 
-The platform defines five primary actors: proposers seeking funding, experts offering scientific review, voters shaping early-stage filtering, funders staking capital, and qualified investors participating in regulated environments. Each group plays a distinct role in ensuring that projects are vetted, evaluated, and funded based on their merit and potential impact. Governance tokens align incentives by rewarding knowledgeable participation, while stablecoins ensure predictable financial operations.
+The platform defines five primary actors: proposers seeking funding, experts offering scientific review, voters shaping early-stage filtering, funders staking capital with a path for qualified investors to invest in regulated environments. Each group plays a distinct role in ensuring that projects are vetted, evaluated, and funded based on their merit and potential impact. Governance tokens align incentives by rewarding knowledgeable participation, while stablecoins ensure predictable financial operations.
 
-Incentive structures are designed to promote long-term engagement. Members can earn rewards through reviewing milestones, contributing code or datasets, producing educational resources, or providing mentorship. This makes the ecosystem not just a funding mechanism but also a community-driven accelerator for quantum computing research and talent development.
+Incentive structures are designed to promote long-term engagement. Members can earn rewards through reviewing milestones, contributing code or datasets, producing educational resources, or providing mentorship. This makes the ecosystem not just a funding mechanism but also a community-driven accelerator for quantum computing research and talent development. Platform fees will be taken when projects are funded.
 
 ### **Actors**
 
 | Actor        | Role                                                             |
 | ------------ | ---------------------------------------------------------------- |
-| **Proposer** | Proposes a quantum project; receives stablecoins if funded.      |
-| **Expert**   | Verified credentials; comments and votes with governance tokens. |
-| **Voter**    | Holds governance tokens; votes or delegates to experts.          |
-| **Funder**   | Stakes stablecoins; votes on shortlisted projects.               |
-| **Investor** | Regulated, qualified investors participating in later phases.    |
+| **Proposer** | Propose quantum projects, receiving funds if funded.             |
+| **Expert**   | Comment and votes with governance tokens.                        |
+| **Voter**    | Vote and/or delegate to experts with governance tokens.          |
+| **Funder**   | Stake funds in a pool and vote on shortlisted projects.          |
+| **Investor** | Qualified investors can invest in a regulated environment.       |
 
 ### **Tokens**
 
 * **QFT** — governance token for expertise-weighted voting, reputation, and incentives.
-* **Stablecoins** — actual funding pool for project grants.
+* **Stablecoins** — funding pool for project grants.
+* **Soul-Bound** — Soul-Bound tokens (SBT) for proposers and experts.
 
 ### **Incentives**
 
+* Information on projects.
 * Networking & community access
 * Education (courses, AMAs)
 * Access to experts, research, and start-ups
@@ -74,9 +76,9 @@ Incentive structures are designed to promote long-term engagement. Members can e
 
 ## **5. Proposal Requirements**
 
-To maintain rigorous quality and transparency, proposals must include essential information such as detailed descriptions, milestone structures, funding needs, and openness levels. Proposers must also provide verified identities through LinkedIn or ORCID and present their work in accessible formats like whitepapers, demo videos, or app links. These requirements ensure both accountability and clarity for voters evaluating the project.
+To maintain rigorous quality and transparency, proposals must include essential information such as detailed descriptions, milestone structures, funding needs, and openness levels. Proposers must also provide verified identities through LinkedIn or ORCID and present their work in accessible formats like whitepapers, demo videos, and/or app links. These requirements ensure both accountability and clarity for voters evaluating the project. Each application to be expert or project proposal will need to be approved before appearing to voters.
 
-Large Language Models can also be used to generate readable summaries for busy voters, improving the community’s ability to quickly understand and assess technical proposals. This helps streamline the review process and increases participation without sacrificing scientific depth or clarity.
+Large Language Models will also be used to generate readable summaries for busy voters, improving the community’s ability to quickly understand and assess technical proposals. This helps streamline the review process and increases participation without sacrificing scientific depth or clarity.
 
 Each proposal must include:
 
@@ -88,12 +90,13 @@ Each proposal must include:
 * Openness / open-source level
 * Reward model (IP, updates, etc.)
 
-**LLMs used to generate TL;DR summaries.**
-
 ---
 
 ## **6. Expert Requirements**
 
+Experts participating in the DAO can be from a quantum technology, business or investments background but must provide a clear and verifiable professional profile to ensure transparency, credibility, and trust in the evaluation process. Each expert is required to submit their full name, institutional affiliation, and a short bio that highlights their relevant expertise in quantum computing or related fields. To support identity verification, experts must also provide an ORCID ID or LinkedIn profile, ensuring that their background can be independently validated. Additionally, experts should briefly describe their motivation for joining the ecosystem—whether to contribute knowledge, support innovation, mentor emerging researchers, or help shape the direction of decentralized quantum funding. A profile photo is included to personalize the expert’s presence within the platform and strengthen community recognition.
+
+In summary:
 * Name, affiliation, short bio
 * ORCID / LinkedIn
 * Motivation for joining
@@ -121,6 +124,8 @@ Reputation decay and slashing mechanisms discourage spam, fraud, and low-quality
 
 ## **8. QFT Token Incentive Model**
 
+The QFT token incentive model rewards meaningful, high-quality contributions while discouraging manipulation and passive participation. Tokens are minted through Proof-of-Contribution activities such as reviewing milestones, contributing code or datasets, producing documentation, or providing workshops and mentorship. Voting on proposals also generates micro-rewards, scaled by a participant’s reputation, with anti-spam mechanisms like quadratic or logarithmic reward decay. Experts with strong, verified track records earn additional bonuses through delegated voting power and oracle-validated project outcomes. All QFT earned is subject to reputation-based vesting and may be clawed back in cases of fraud, inactivity, or low-quality participation, ensuring long-term alignment and integrity.
+
 ### **Proof-of-Contribution (PoC)**
 
 QFT minted for:
@@ -137,19 +142,17 @@ QFT minted for:
 
 ### **Delegation Incentives**
 
-* Experts with strong track records receive QFT bonuses
+* Experts receive QFT bonuses
 * Based on oracle-verified success metrics
 
 ### **Reputation-Based Vesting**
 
-* QFT is vested
+* QFT tokens are earned immediately but vest gradually over time to ensure long-term, trustworthy participation.
 * Can be clawed back if fraudulent or inactive
 
----
+### **Anti-Manipulation & Sybil Protection**
 
-## **9. Anti-Manipulation & Sybil Protection**
-
-* **Soul-Bound Credentials** (non-transferable SBTs) for experts/voters
+* **Soul-Bound Credentials** (non-transferable SBTs) for experts and proposers.
 * **Quadratic voting / staking**
 * **Stake-to-vote** + slashing for misconduct
 * **Light KYC for proposers & experts**
@@ -157,69 +160,41 @@ QFT minted for:
 
 ---
 
-## **10. Regulatory Strategy**
+## **9. Regulatory Strategy**
 
 To avoid classification as a security, QFT tokens have no profit expectation and cannot be traded on exchanges. Instead, QFT serves strictly as a governance and utility token within the DAO. Stablecoins act as the funding layer, keeping financial flows compliant and straightforward.
 
-The system incorporates minimal but essential regulatory considerations, such as lightweight KYC for proposers and experts, AML awareness, and jurisdiction-sensitive practices. This ensures that the DAO can scale responsibly across different regions and avoid regulatory pitfalls while maintaining accessibility.
+The system incorporates minimal but essential regulatory considerations, such as lightweight KYC for proposers and experts, AML and geopolitical awareness, and jurisdiction-sensitive practices. This ensures that the DAO can scale responsibly across different regions and avoid regulatory pitfalls while maintaining accessibility.
 
 * Governance/utility tokens only — **no yield, no investment promise**
 * Non-tradeable (no DEX listing)
-* Optional future airdrop (no guarantee)
-* Clear tokenomics separation:
+* Clear tokenomics separation.
 
   * **QFT = governance**
   * **Stablecoin = funding**
-* Minimal KYC (e.g., ZKPassport)
-* AML awareness
-* Avoid geopolitical bias
+  * **Investments on a seperate system** 
 
 ---
 
 ## **11. Technology Stack**
 
-The technical stack integrates modern Web3 infrastructure with scalable off-chain systems. The front end relies on Next.js with wallet integrations via wagmi and RainbowKit. Data is stored using Supabase or MongoDB with Prisma, while Hardhat and ethers.js provide development and testing support. Identity can be managed using ZKpassport for privacy-preserving verification.
+The technical stack integrates latest Web3 infrastructure with scalable off-chain systems. The front end relies on frameworks such as Next.js with wallet integrations via wagmi and RainbowKit; data stored using MongoDB with Prisma, while Hardhat and ethers.js provide development and testing in Sepolia. Identity can be managed using ZKpassport for privacy-preserving verification.
 
-Monitoring and transparency are built into the system through oracle services, milestone verification tools, blockchain event logs, and analytical dashboards such as Dune, Tally API, or custom Voila/Streamlit apps. This ensures all stakeholders have real-time visibility into project progress and governance metrics.
-
-### **App Integration**
-
-* **Next.js**, **wagmi**, **RainbowKit**
-* **Supabase / MongoDB + Prisma**
-* **Hardhat + ethers.js** for testing
-
-### **Identity**
-
-* **ZKpassport**
-
-### **Tokens**
-
-* ERC-20 / ERC-1155 / Hybrid
-
-### **Monitoring**
-
-* Oracle-assisted milestone verification (Chainlink, events, API triggers)
-* Dashboards via Dune, Tally API, or custom Streamlit / Voila
-
-### **Transparency Metrics**
-
-* Voter participation
-* Funds allocated
-* Project progress
+Monitoring and transparency are built into the system through oracle services, milestone verification tools, blockchain event logs, and analytical dashboards such as Dune, Tally API, or custom Voila/Streamlit apps. This ensures all stakeholders have real-time visibility into project progress and governance metrics such as voter participation, funds allocated and project progress.
 
 ---
 
 ## **12. Project Phases**
 
-The project roadmap unfolds across three major phases. Phase 0 focuses on development, testing, and early community building. Phase 1 expands the ecosystem through marketing, governance token distribution, and the first grant round. It also introduces a public-facing presence via a website, social media, and a communication hub like Discord.
+The project roadmap unfolds across three major phases. Phase 0 focuses on development, testing, and early community building. Phase 1 launches the ecosystem through marketing, governance token distribution, and the first grant round. It also introduces a public-facing presence via a website, social media, and a communication hub like Discord.
 
-Phase 2 deepens engagement through dashboards, regional ambassador teams, hackathons, and cross-DAO collaborations. Finally, Phase 3 introduces the Quantum IP Sandbox, explores compliant IP tokenization models, and expands scientific outreach globally. These phases guide the DAO’s evolution from a prototype into a fully operational, globally recognized funding ecosystem.
+Phase 2 deepens engagement through connecting to regulated investment platforms, regional ambassador teams, hackathons, and cross-DAO collaborations. Finally, Phase 3 introduces the Quantum IP Sandbox, explores compliant IP tokenization models, and expands scientific outreach globally. These phases guide the DAO’s evolution from an MVP into a fully operational, globally recognized funding ecosystem.
 
 ### **Phase 0 — Build**
 
 * Development, testing, community conversations
 
-### **Phase 1 — Launch Community**
+### **Phase 1 — Community Ignition**
 
 * Promote QDAO
 * Build ecosystem partners
@@ -250,61 +225,22 @@ Phase 2 deepens engagement through dashboards, regional ambassador teams, hackat
 
 ---
 
-## **13. To-Do List**
-
-Key action items include completing the whitepaper, building the DAO’s smart contracts, and conducting a third-party audit. The outreach plan is structured around a funnel that progresses from whitepaper publication to partnerships with quantum companies such as QCi, IBM, Quantinuum, and finance institutions like HSBC and DBS.
-
-Additional focus areas include preparing hackathons, designing token reward systems, and organizing a launch event. These tasks collectively build the foundation needed for a successful testnet deployment and eventual mainnet operation.
-
-* Smart contract development
-* DAO audit
-* Whitepaper
-* Official website
-* Outreach plan (whitepaper → site → proposals → partnerships)
-* Corporate partnerships: QCi, IBM, Binance, Classiq, Quantinuum, HSBC, OCBC, DBS
-* Hackathons + token rewards
-* Launch event
-
----
-
 ## **14. Expectations**
 
-The estimated setup cost is low—around $200 for hosting and testnet infrastructure—while audits and future upgrades may require additional investment. The DAO is expected to operate leanly using platforms like Vercel for hosting and Sepolia for testing. Long-term success is measured by the volume of funded proposals, with an aspirational goal of at least one funded project per month.
+The estimated setup cost is low for hosting and testnet infrastructure—while audits and future upgrades may require additional investment. The DAO is expected to operate leanly using platforms like Vercel for hosting and Sepolia for testing. Long-term success is measured by the volume of funded proposals, with an aspirational goal of at least one funded project per month.
 
 Financial projections envision rapid growth in funding flows: $10M in Year 1, $100M in Year 2, and $1B in Year 3. These targets reflect the belief that decentralized funding can unlock massive global interest in quantum technologies once a trustworthy and transparent platform exists.
-
-* Setup cost: ~$200
-* Network: Sepolia (testnet)
-* Audit: Ottersec
-* Hosting: Vercel (free plan)
-* Target funding flow:
-
-  * **Year 1:** $10M
-  * **Year 2:** $100M
-  * **Year 3:** $1B
-* Target: Fund **1+ proposal per month**
 
 ---
 
 ## **15. Timeline**
 
-The timeline includes a development and testing phase concluding in December 2025, followed by a full launch in January 2026. This schedule allows adequate time for contract testing, website deployment, initial community activation, and smart contract audits.
+The timeline includes a development and testing phase concluding in December 2025, followed by a launch in January 2026. This schedule allows adequate time for contract testing, website deployment, initial community activation, and smart contract audits.
 
 * **Dec 2025:** Design → Development → Testing
 * **Jan 2026:** Public Launch
 
-Immediate next steps include finalizing the website design, coding smart contracts, preparing the Sepolia test environment, and developing automated testing scripts. Marketing plans and audit preparations must also begin in parallel. Funding for the DAO may involve accelerator programs (such as Binance), venture capital, or angel investment.
-
 ---
-
-## **17. Potential Projects**
-
-quantum machine learning applications, Q-GPT systems, and collaborative initiatives between Japan and Singapore. These projects provide high-impact candidates for initial grant rounds and serve as compelling use cases to attract community engagement.
-
-* QRE (Quantum Risk Engine)
-* Quantum Finance
-* QML for Fraud Detection
-* Q-GPT
 
 ## **References**
 
